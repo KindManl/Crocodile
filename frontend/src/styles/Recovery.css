@@ -1,0 +1,60 @@
+.recovery{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 36.5%;
+    top: 25%;
+    width: 500px;
+    height: 360px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+
+}
+
+.info{
+    top: 50px;
+    width: 400px;
+    left: 50px;
+    position: absolute;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    text-align: center;
+}
+
+.recovery-post{
+    background-color: #E0E9BA;
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #E0E9BA;
+    position: absolute;
+    top: 120px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 70px;
+}
+
+.recovery-button{
+    background-color: #E0E9BA;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    top: 200px;
+    position: absolute;
+    left: 100px;
+
+}
+
+.authorization-from-recovery{
+    font-weight: 300;
+    font-size: 120%;
+    font-style: normal;
+    top: 280px;
+    position: absolute;
+    left: 170px;
+}

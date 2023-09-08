@@ -1,0 +1,223 @@
+.imgw {
+    position: absolute;
+    width: 25%;
+    top: 0.7%;
+    left: 6.6%;
+}
+
+.modal {
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 35%;
+    height: 40% ;
+    background-color: #FFFE83;
+    border-radius: 15px;
+
+}
+
+.modal-title {
+    position: absolute;
+    left: 26%;
+    font-style: normal;
+    font-size: 100%;
+    top: 0%;
+}
+
+.modal-input {
+    position: absolute;
+    top: 30%;
+    height: 15%;
+    width: 90%;
+    left: 4%;
+    border-color: #E0E9BA;
+    border-radius: 5px;
+    border-width: 1px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 150%;
+
+}
+
+.modal-close {
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    border-width: 3px;
+    width: 40%;
+    height: 20%;
+    left: 5%;
+    top: 60%;
+    background-color: #B7F46E;
+    mix-blend-mode: normal;
+    border-radius: 15px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-color: #E0E9BA;
+}
+
+.modal-in {
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    border-width: 3px;
+    width: 40%;
+    height: 20%;
+    left: 55%;
+    top: 60%;
+    background-color: #B7F46E;
+    mix-blend-mode: normal;
+    border-radius: 15px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-color: #E0E9BA;
+}
+
+.imgm {
+    position: absolute;
+    width: 28%;
+    left: 59.3%;
+    top: 70%;
+}
+
+.game-creation-button{
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    border-width: 3px;
+    width: 22.8%;
+    height: 7.3%;
+    left: 62.2%;
+    top: 22.7%;
+    background-color: #B7F46E;
+    mix-blend-mode: normal;
+    border-radius: 15px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-color: #E0E9BA;
+}
+
+.game-creation-field {
+    position: absolute;
+    width: 22.8%;
+    height: 29%;
+    left: 62.2%;
+    top: 38.2%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.table-component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    position: absolute;
+    width: 52.6%;
+    min-height: 45.5%;
+    left: 4.63%;
+    top: 21.7%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.checkbox-room {
+    height: 10.7%;
+    width: 10.7%;
+    color: #BFBE56;
+    border-radius: 0px;
+    position: absolute;
+    left: 32%;
+    top: 74%;
+}
+
+.lable-text1 {
+    position: absolute;
+    left: 6%;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 150%;
+    top: 15%;
+}
+
+.lable-text2 {
+    position: absolute;
+    left: 6%;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 150%;
+    top: 35%;
+}
+
+.lable-text3 {
+    position: absolute;
+    left: 6%;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 150%;
+    top: 55%;
+}
+
+.lable-text4 {
+    position: absolute;
+    left: 6%;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 150%;
+    top: 75%;
+}
+
+.dictionaries{
+    position: absolute;
+    width: 94%;
+    left: 3%;
+    top: 70%;
+    background-color: lightgray;
+    border-radius: 15px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150%;
+
+}
+
+.number-players {
+    position: absolute;
+    width: 33.4%;
+    height: 10.7%;
+    left: 51.6%;
+    top: 34%;
+    border-color: #E0E9BA;
+    border-radius: 5px;
+    border-width: 1px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 150%;
+}
+
+.name {
+    position: absolute;
+    width: 50%;
+    height: 10.7%;
+    left: 35%;
+    top: 14%;
+    border-color: #E0E9BA;
+    border-radius: 5px;
+    border-width: 1px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 150%;
+}
+.passw{
+    position: absolute;
+    width: 50%;
+    height: 10.7%;
+    left: 35%;
+    top: 54%;
+    border-color: #E0E9BA;
+    border-radius: 5px;
+    border-width: 1px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 150%;
+}

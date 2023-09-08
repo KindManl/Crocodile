@@ -1,0 +1,112 @@
+#!groovy
+
+properties([disableConcurrentBuilds()])
+
+pipeline {
+    agent any
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '2', artifactNumToKeepStr: '2'))
+        timestamps()
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo INITIALIZE
+                ''' 
+            }
+        }
+        stage ('Build backend') {
+            steps {
+                updateGitlabCommitStatus name: 'build_backend', state: 'pending'
+                echo  " ============== start building backend ==================="
+                dir ('backend') {
+                	sh 'mvn clean package spring-boot:repackage'
+                }
+            }
+            post {
+                success {
+                    updateGitlabCommitStatus name: 'build_backend', state: 'success'
+                    }
+                failure {
+                    updateGitlabCommitStatus name: 'build_backend', state: 'failed'
+                    echo "Check that the database has been successfully brought up"
+                    }
+            }
+        }
+        stage("Create and run docker image for backend") {
+            steps {
+                updateGitlabCommitStatus name: 'build_docker_back', state: 'pending'
+                echo " ============== start building docker image =================="
+                dir ('backend') {
+                    sh 'docker 2>/dev/null 1>&2 stop app_back || true'
+                    sh 'docker 2>/dev/null 1>&2 rmi backend_crocodile:release || true'
+                	sh 'docker build -t backend_crocodile:release . '
+                }
+            }
+            post {
+                success {
+                    updateGitlabCommitStatus name: 'build_docker_back', state: 'success'
+                    }
+                failure {
+                    updateGitlabCommitStatus name: 'build_docker_back', state: 'failed'
+                    }
+            }            
+        }
+        stage("Run docker container for backend") {
+            steps {
+                updateGitlabCommitStatus name: 'run_docker_back', state: 'pending'
+                echo " ============== run docker container ========================="
+                sh 'docker run --rm --net=host --name  backend_jenkins -t -d -p 8181:8181 backend_crocodile:release'
+                sh 'docker ps'
+                sh 'docker logs backend_jenkins'
+                sh 'docker stop backend_jenkins'
+            }
+            post {
+                success {
+                    updateGitlabCommitStatus name: 'run_docker_back', state: 'success'
+                    }
+                failure {
+                    updateGitlabCommitStatus name: 'run_docker_back', state: 'failed'
+                    }
+            }             
+        }
+        stage("Create and run docker image for frontend") {
+            steps {
+                updateGitlabCommitStatus name: 'build_docker_front', state: 'pending'
+                echo " ============== start building docker image =================="
+                dir ('frontend') {
+                    sh 'docker 2>/dev/null 1>&2 stop app_front || true'
+                    sh 'docker 2>/dev/null 1>&2 rmi frontend-app:release || true'
+                	sh 'docker build -t frontend-app:release . '
+                }
+            }
+            post {
+                success {
+                    updateGitlabCommitStatus name: 'build_docker_front', state: 'success'
+                    }
+                failure {
+                    updateGitlabCommitStatus name: 'build_docker_front', state: 'failed'
+                    }
+            }            
+        }
+        stage("Run docker container for frontend") {
+            steps {
+                updateGitlabCommitStatus name: 'run_docker_front', state: 'pending'
+                echo " ============== run docker container ========================="
+                sh 'docker run --rm --name app_front -t -d -p 3001:3001 frontend-app:release'
+                sh 'docker ps'
+                sh 'docker logs app_front'
+                sh 'docker stop app_front'
+            }
+            post {
+                success {
+                    updateGitlabCommitStatus name: 'run_docker_front', state: 'success'
+                    }
+                failure {
+                    updateGitlabCommitStatus name: 'run_docker_front', state: 'failed'
+                    }
+            }               
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.autho{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 36.5%;
+    top: 25%;
+    width: 500px;
+    height: 385px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.login{
+    background-color: #E0E9BA;
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #E0E9BA;
+    position: absolute;
+    top: 50px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 105px;
+}
+
+.login-lable{
+    top: 50px;
+    position: absolute;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 10px;
+}
+
+.pass{
+    background-color: #E0E9BA;
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #E0E9BA;
+    position: absolute;
+    top: 120px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 105px;
+}
+
+.pass-lable{
+    top: 120px;
+    position: absolute;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 10px;
+}
+
+.in-button{
+   background-color: #E0E9BA;
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    top: 190px;
+    position: absolute;
+    left: 175px;
+}
+
+.forgot-password{
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    top: 250px;
+    position: absolute;
+    left: 191px;
+}
+
+.restore{
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    top: 260px;
+    position: absolute;
+    left: 250px;
+}
+
+.no-account{
+    font-weight: 300;
+    font-size: 120%;
+    font-style: normal;
+    top: 320px;
+    position: absolute;
+    left: 95px;
+}
+
+.registration{
+    font-weight: 300;
+    font-size: 120%;
+    font-style: normal;
+    top: 320px;
+    position: absolute;
+    left: 240px;
+}
+
+.eye{
+    width: 20px;
+}
+
+.eye-buttona{
+    border-radius: 15px;
+    background-color: #E0E9BA;
+    position: absolute;
+    top: 127px;
+    left: 420px;
+}
+
+.email-exists{
+    font-style: normal;
+    top: 30px;
+    position: absolute;
+    left: 120px;
+    color: #FFFFFF;
+}
+
+.incorrect-password{
+    font-style: normal;
+    top: 100px;
+    position: absolute;
+    left: 180px;
+    color: #FFFFFF;
+}

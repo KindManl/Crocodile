@@ -1,0 +1,173 @@
+.regist{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 36.5%;
+    top: 25%;
+    width: 500px;
+    height: 450px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.nickname{
+    background-color: #E0E9BA;
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #E0E9BA;
+    position: absolute;
+    top: 50px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 120px;
+}
+
+.nickname-lable{
+    top: 50px;
+    position: absolute;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 10px;
+}
+
+.post{
+    background-color: #E0E9BA;
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #E0E9BA;
+    position: absolute;
+    top: 120px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 120px;
+}
+
+.post-lable{
+    top: 120px;
+    position: absolute;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 40px;
+}
+
+.password{
+    background-color: #E0E9BA;
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #E0E9BA;
+    position: absolute;
+    top: 190px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 120px;
+}
+
+.password-lable{
+    top: 190px;
+    position: absolute;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 25px;
+}
+.passworddb{
+    background-color: #E0E9BA;
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #E0E9BA;
+    position: absolute;
+    top: 260px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 120px;
+}
+
+.passworddb-lable{
+    top: 235px;
+    position: absolute;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    left: 10px;
+    width: 100px;
+}
+
+.reg-button{
+    background-color: #E0E9BA;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+    top: 330px;
+    position: absolute;
+    left: 130px;
+}
+
+.authorization{
+    font-weight: 300;
+    font-size: 120%;
+    font-style: normal;
+    top: 390px;
+    position: absolute;
+    left: 178px;
+}
+
+.eye-button{
+    border-radius: 15px;
+    background-color: #E0E9BA;
+    position: absolute;
+    top: 198px;
+    left: 435px;
+}
+
+.eyedb-button{
+    border-radius: 15px;
+    background-color: #E0E9BA;
+    position: absolute;
+    top: 267px;
+    left: 435px;
+}
+
+.name-occupied{
+    font-style: normal;
+    top: 30px;
+    position: absolute;
+    left: 160px;
+    color: #FFFFFF;
+}
+
+.email-occupied{
+    font-style: normal;
+    top: 100px;
+    position: absolute;
+    left: 130px;
+    color: #FFFFFF;
+}
+
+.password-short{
+    font-style: normal;
+    top: 170px;
+    position: absolute;
+    left: 120px;
+    color: #FFFFFF;
+}
+
+.not-match{
+    font-style: normal;
+    top: 240px;
+    position: absolute;
+    left: 170px;
+    color: #FFFFFF;
+}
